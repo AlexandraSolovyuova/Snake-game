@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(img/bg1.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.clearfix::after{
+	content: "";
+	display:table;
+	clear: both;
+
+}
+
+#canvas{
+	width: 632px;
+	height: 632px;
+	display: block;
+	margin: 30px auto;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background: url(img/snake-bg.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	
+}
+#score{
+	width:632px;
+	height:30px;
+	padding-top: 5px;
+	margin:50px auto;
+	text-align: center;
+	border-radius: 10px;
+	border:1px solid #000;
+	background: url(img/snake-bg.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	font-size: 24px;
+	font-weight: bold;
+
+}
+#keyUp, #keyLeft, #keyRight, #keyDown, #keyCenter{
+	width: 204px;
+	height: 120px;
+	text-align: center;
+	border:3px solid #000;
+	border-radius: 20px;
+	background: url(img/snake-bg.jpg);
+	background-size: center;
+	-webkit-background-size: center;
+	font-size: 28px;
+	font-weight: bold;
+	padding-top: 40px;
+}
+#keyLeft,#keyRight,#keyCenter{
+	float: left;
+}
+#keyUp, #keyDown, #middle{
+	margin: 20px auto;
+}
+#middle{
+	width: 632px;
+}
+#keyCenter, #keyRight {
+	margin-left: 10px;
+}
